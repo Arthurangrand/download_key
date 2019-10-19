@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOWNLOAD ELOGE</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+var password_legs = "uiop";
+var password_donacom = "jklm";
+
+	function verif_pw () {
+
+var pw = document.getElementById("lib_pw").value;
+		
+		if (pw === password_legs) {
+			window.open("http://link");
+			//alert(pw);
+		}
+		else if (pw === password_donacom) {
+			window.open("http://link2");
+		}
+		else {
+			alert("Wrong key");
+			
+		}
+		
+	}
+</script>
+
+	<input type="password" name="key" id="lib_pw">
+
+	<button onclick="verif_pw()" class="btn" >DOWNLOAD</button>
+</body>
+
+</html>
